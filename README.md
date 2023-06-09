@@ -97,9 +97,13 @@
 
 </details>
 
-## CONTENIDO DE LA GUÍA
+## 1. Competencias del curso 
 
-### MARCO CONCEPTUAL
+- General: C.c. Diseña responsablemente aplicaciones web, sus componentes o procesos para satisfacer necesidades dentro de restricciones realistas: econ ́omicas, medio ambientales, sociales, pol ́ıticas,  ́eticas, de salud, de seguridad, manufacturaci ́on y sostenibilidad.
+- Espec ́ıfica: C.m. Construye responsablemente soluciones con tecnología web siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
+- Espec ́ıfica: C.p. Aplica de forma flexible t ́ecnicas, m ́etodos, principios, normas, est ́andares y herramientas del desarrollo web necesarias para la construcción de aplicaciones web e implementación de estos sistemas en una organizaci ́on.
+
+## 2. Resultado del estudiante
 
 -   pip ~ Instaladors de paquetes de Python
 -   Indice de paquetes de Python ~ PyPI. Otros: CPAN->Perl, Perl->PHP
