@@ -14,7 +14,7 @@
     </theader>
     <tbody>
         <tr><td colspan="3"><span style="font-weight:bold;">Formato</span>: Guía de Práctica de Laboratorio</td></tr>
-        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/03/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLD-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
+        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/02/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLD-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
     </tbody>
 </table>
 </div>
@@ -35,7 +35,7 @@
 <td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
-<td>FECHA INICIO::</td><td>30-May-2022</td><td>FECHA FIN:</td><td>03-Jun-2022</td><td>DURACIÓN:</td><td>04 horas</td>
+<td>FECHA INICIO::</td><td>30-May-2023</td><td>FECHA FIN:</td><td>03-Jun-2023</td><td>DURACIÓN:</td><td>04 horas</td>
 </tr>
 <tr><td colspan="6">RECURSOS:
     <ul>
@@ -52,9 +52,15 @@
     </ul>
 </td>
 </<tr>
-<tr><td colspan="6">DOCENTES:
+<tr><td colspan="6">DOCENTE:
 <ul>
-<li>Richart Smith Escobedo Quispe - rescobedoq@unsa.edu.pe</li>
+<li>Ing. Anibal Sardon</li>
+</ul>
+</td>
+</<tr>
+<tr><td colspan="6">ALUMNO:
+<ul>
+<li>Roni Companocca Checco</li>
 </ul>
 </td>
 </<tr>
@@ -75,7 +81,7 @@
 
 #
 
-## OBJETIVOS TEMAS Y COMPETENCIAS
+## 1. Competencias del curso
 
 ### OBJETIVOS
 
