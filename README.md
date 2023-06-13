@@ -14,7 +14,7 @@
     </theader>
     <tbody>
         <tr><td colspan="3"><span style="font-weight:bold;">Formato</span>: Guía de Práctica de Laboratorio</td></tr>
-        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2022/02/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLD-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
+        <tr><td><span style="font-weight:bold;">Aprobación</span>:  2023/02/01</td><td><span style="font-weight:bold;">Código</span>: GUIA-PRLD-001</td><td><span style="font-weight:bold;">Página</span>: 1</td></tr>
     </tbody>
 </table>
 </div>
@@ -32,7 +32,7 @@
 <tr><td>ASIGNATURA:</td><td colspan="5">Programación Web 2</td></tr>
 <tr><td>TÍTULO DE LA PRÁCTICA:</td><td colspan="5">Django</td></tr>
 <tr>
-<td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2022 A</td><td>NRO. SEMESTRE:</td><td>III</td>
+<td>NÚMERO DE PRÁCTICA:</td><td>05</td><td>AÑO LECTIVO:</td><td>2023 A</td><td>NRO. SEMESTRE:</td><td>III</td>
 </tr>
 <tr>
 <td>FECHA INICIO::</td><td>30-May-2023</td><td>FECHA FIN:</td><td>03-Jun-2023</td><td>DURACIÓN:</td><td>04 horas</td>
@@ -83,438 +83,235 @@
 
 ## 1. Competencias del curso
 
-### OBJETIVOS
+- General: C.c. Dise ̃na responsablemente aplicaciones web, sus componentes o procesos para satisfacer necesidades dentro de restricciones realistas: econ ́omicas, medio ambientales, sociales, políticas,  ́eticas, de salud, de seguridad, manufacturación y sostenibilidad.
 
--   Crear un Proyecto Django dentro de un entorno virtual.
+- Específica: C.m. Construye responsablemente soluciones con tecnolog ́ıa web siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
 
-### TEMAS
--   Entorno virtual
--   Django
--   Modelos
--   Migraciones
--   Panel de administración
-
-<details>
-<summary>COMPETENCIAS</summary>
-
-- C.c Diseña responsablemente sistemas, componentes o procesos para satisfacer necesidades dentro de restricciones realistas: económicas, medio ambientales, sociales, políticas, éticas, de salud, de seguridad, manufacturación y sostenibilidad.
-- C.m Construye responsablemente soluciones siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
-- C.p Aplica de forma flexible técnicas, métodos, principios, normas, estándares y herramientas de ingeniería necesarias para la construcción de software e implementación de sistemas de información.
-
-</details>
-
-## 1. Competencias del curso 
-
-- General: C.c. Diseña responsablemente aplicaciones web, sus componentes o procesos para satisfacer necesidades dentro de restricciones realistas: econ ́omicas, medio ambientales, sociales, pol ́ıticas,  ́eticas, de salud, de seguridad, manufacturaci ́on y sostenibilidad.
-- Espec ́ıfica: C.m. Construye responsablemente soluciones con tecnología web siguiendo un proceso adecuado llevando a cabo las pruebas ajustada a los recursos disponibles del cliente.
-- Espec ́ıfica: C.p. Aplica de forma flexible t ́ecnicas, m ́etodos, principios, normas, est ́andares y herramientas del desarrollo web necesarias para la construcción de aplicaciones web e implementación de estos sistemas en una organizaci ́on.
+- Específica: C.p. Aplica de forma flexible técnicas, métodos, principios, normas, estándares y herramientas del desarrollo web necesarias para la construcción de aplicaciones web e implementación de estos sistemas en una organización.
 
 ## 2. Resultado del estudiante
 
--   pip ~ Instaladors de paquetes de Python
--   Indice de paquetes de Python ~ PyPI. Otros: CPAN->Perl, Perl->PHP
--   
+- RE. 2 La capacidad de aplicar diseño de ingeniería para producir soluciones a problemas y diseñar sistemas, componentes o procesos para satisfacer necesidades espec ́ıficas dentro de consideraciones realistas en los aspectos de salud pública, seguridad y bienestar; factores globales, culturales, sociales, econ ́omicos y ambientales.
 
-## EJERCICIO RESUELTO POR EL DOCENTE
+- RE. 8 La capacidad de crear, seleccionar y utilizar t ́ecnicas, habilidades, recursos y herramientas modernas de ingeniería y tecnologías de la información, incluyendo la predicción y el modelamiento, con una comprensión de las limitaciones.
 
--   Crea el directorio para trabajar Django dentro de un entorno virtual:
-    ```sh
-    mkdir django_env
-    ```
-    ```sh
-    tree .
-    ```
-    ```sh
-    .
-    ├── django_env
-    └── README.md
+## 3. Equipos, materiales y temas
 
-    1 directory, 1 file
-    ```
+- Sistema Operativo (GNU/Linux de preferencia).
+- GNU Vim.
+- Python 3.
+- Git.
+- Cuenta en GitHub con el correo institucional.
+- Entorno virtual.
+- Django 4.
 
--   Crear el entorno virtual dentro del directorio creado:
+## 4. Directorio de trabajo
+
+- Cree su directorio de trabajo.
+- Luego, diríjase a este directorio, para clonar su repositorio y continuar sus practicas.
+
     ```sh
-    cd django_env
-    virtualenv -p python3 env
-    ```
-    ```sh
-    created virtual environment CPython3.9.2.final.0-64 in 3932ms
-    creator CPython3Posix(dest=/.../env, clear=False, no_vcs_ignore=False, global=False)
-    seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=/home/.../.local/share/virtualenv)
-    added seed packages: pip==22.0.4, setuptools==62.1.0, wheel==0.37.1
-    activators BashActivator,CShellActivator,FishActivator,NushellActivator,PowerShellActivator,PythonActivator
+                 Listing 1: Creando directorio de trabajo
+    $ mkdir -p $HOME/rescobedoq/
     ```
 
     ```sh
-    tree -L 4 ../
-    ```
-    ```sh
-    ../
-    ├── django_env
-    │   └── env
-    │       ├── bin
-    │       │   ├── activate
-    │       │   ├── activate.csh
-    │       │   ├── activate.fish
-    │       │   ├── activate.nu
-    │       │   ├── activate.ps1
-    │       │   ├── activate_this.py
-    │       │   ├── deactivate.nu
-    │       │   ├── pip
-    │       │   ├── pip3
-    │       │   ├── pip-3.9
-    │       │   ├── pip3.9
-    │       │   ├── python -> /usr/bin/python3
-    │       │   ├── python3 -> python
-    │       │   ├── python3.9 -> python
-    │       │   ├── wheel
-    │       │   ├── wheel3
-    │       │   ├── wheel-3.9
-    │       │   └── wheel3.9
-    │       ├── lib
-    │       │   └── python3.9
-    │       └── pyvenv.cfg
-    └── README.md
+                 Listing 2: Dirij ́ıendonos al directorio de trabajo
+    $ cd $HOME/rescobedoq/
     ```
 
--   Comprobemos que estemos en el directorio ```django_env```:
     ```sh
-    pwd
-    /home/.../django_env
+                 Listing 3: Clonando repositorio GitHub
+    $ git clone [URL_DE_SU_GITHUB_PRIVADO]
     ```
 
--   Activamos el entorno virtual:
     ```sh
-    source env/bin/activate
+                 Listing 4: Creando directorio para laboratorio
+    $ mkdir -p $HOME/rescobedoq/pw2-lab-23a/lab05/exercises/
     ```
 
--   Listamos los paquetes instalados
+- Siempre evalue utilizar el archivo .gitignore para no considerar algunos archivo innecesarios sobre todo para el repositorio GitHub.
+- Pueden haber varios de estos archivos y estar ubicados estrat ́egicamente; por ejemplo sólo para un laboratorio en particular.
+
     ```sh
-    pip list
+                 Listing 5: Creando .gitignore
+    $ vim $HOME/rescobedoq/pw2-lab-23a/lab05/.gitignore
     ```
+
     ```sh
-    Package    Version
+                 Listing 6: Ejemplo de .gitignore
+    my_env/bin/*
+    my_env/lib/*
+    my_env/src/__pycache__/*
+    *.pyc
+    ```
+
+- Estudie el archivo .gitignore del proyecto Library :
+- https://github.com/mdn/django-locallibrary-tutorial/blob/main/.gitignore
+
+## 5. Marco teórico
+
+### 5.1. Django
+
+- Django es un framework web Python con el cu ́al el desarrollo de sitios web son r ́apidos, seguros y sobre todo f ́aciles de mantener.
+- Django se ocupa de gran parte de las molestias del desarrollo web, por lo que puede concentrarse en escribir su aplicación sin necesidad de reinventar la rueda.
+- Es software libre, tiene una comunidad pr ́ospera y activa, excelente documentaci ́on y muchas opciones de soporte gratuito y de pago.
+
+### 5.2. Crear un directorio para el entorno virtual de Django
+
+- Para crear un ambiente elija en qu ́e directorio se va crear el entorno virtual.
+
+    ```sh
+                 Listing 7: Creando directorio para entorno virtual en Unix
+    $ mkdir -p $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
+    ```
+
+    ```sh
+                 Listing 8: Creando directorio para entorno virtual
+    $ mkdir -p $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
+    ```
+
+### 5.3. Crear entorno virtual en un directorio
+
+- En este directorio crear un entorno virtual ejecutando el siguiente comando:
+
+    ```sh
+                 Listing 9: Creando entorno virtual en GNU/Linux
+    $ cd $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
+    $ virtualenv -p python3 .
+    ```
+
+    ```sh
+                 Listing 10: Creando entorno virtual en MS Windows
+    C:\>python -m venv c:\rescobedoq\pw2-lab-23a\lab05\my_env
+    ```
+
+    ```sh
+                 Listing 11: Creando entorno virtual en MacOS
+    $ python -m venv $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
+    ```
+
+### 5.4. Activando entorno virtual
+
+- En el directorio de trabajo active el entorno virtual ejecutando el script activate.
+- Sea cual sea nuestro sistema operativo sabremos que el entorno virtual se ha activado porque su nombre aparece entre par ́entesis delante del promt.
+
+    ```sh
+                 Listing 12: Activando entorno virtual en GNU/Linux
+    $ cd $HOME/rescobedoq/pw2-lab-23a/lab05/exercises/
+    $ source ./../my_env/bin/activate
+    (my_env) user@localhost:$
+    ```
+
+    ```sh
+                 Listing 13: Activando entorno virtual en GNU/Linux
+    C:\rescobedoq\pw2-lab-23a\lab05\my_env\scripts\activate.bat
+    ```
+
+    ```sh
+                 Listing 14: Activando entorno virtual en GNU/Linux
+    $ source $HOME/rescobedoq/pw2-lab-23a/lab05/my_env/bin/activate
+    ```
+
+### 5.5. Desactivando entorno virtual
+
+- El comando para desactivar el entorno virtual es id ́entico para Windows, macOS y Linux:
+
+    ```sh
+                 Listing 15: Desactivando entorno virtual
+    $ deactivate
+    ```
+
+### 5.6. Instalando Django dentro del entorno virtual
+
+- Siempre hay que estar consientes de los paquetes de nuestro entorno virtual.
+
+    ```sh
+                 Listing 16: Mostrando paquetes instalados en el entorno virtual
+    (my_env) user@localhost:$ pip list
+    Package Version
     ---------- -------
-    pip        22.0.4
+    pip 22.0.4
     setuptools 62.1.0
-    wheel      0.37.1
-    WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
-    You should consider upgrading via the '/home/.../django_env/env/bin/python -m pip install --upgrade pip' command.
+    wheel 0.37.1
     ```
 
--   Instalamos Django con pip:
+- Instalamos Django con pip:
+
     ```sh
-    pip install Django
-    ```
-    ```sh
-    Collecting Django
-    Downloading Django-4.0.5-py3-none-any.whl (8.0 MB)
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 8.0/8.0 MB 3.6 MB/s eta 0:00:00
-    Collecting asgiref<4,>=3.4.1
-    Downloading asgiref-3.5.2-py3-none-any.whl (22 kB)
-    Collecting sqlparse>=0.2.2
-    Downloading sqlparse-0.4.2-py3-none-any.whl (42 kB)
-        ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 KB 658.8 kB/s eta 0:00:00
-    Installing collected packages: sqlparse, asgiref, Django
-    Successfully installed Django-4.0.5 asgiref-3.5.2 sqlparse-0.4.2
-    WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
-    You should consider upgrading via the '/home/.../django_env/env/bin/python -m pip install --upgrade pip' command.
+                 Listing 17: Instando Django
+    (my_env) user@localhost:$ pip install Django
     ```
 
--   Volvemos a listar los paquetes instalados:
+- Volvemos a listar los paquetes instalados:
+
     ```sh
-    pip list
-    ```
-    ```sh
-    Package    Version
+                 Listing 18: Mostrando Django instalado en el entorno virtual
+    (my_env) user@localhost:$ pip list
+    Package Version
     ---------- -------
-    asgiref    3.5.2
-    Django     4.0.5
-    pip        22.0.4
+    asgiref 3.5.2
+    Django 4.0.5
+    pip 22.0.4
     setuptools 62.1.0
-    sqlparse   0.4.2
-    wheel      0.37.1
-    WARNING: You are using pip version 22.0.4; however, version 22.1.2 is available.
-    You should consider upgrading via the '/home/.../django_env/env/bin/python -m pip install --upgrade pip' command.
+    sqlparse 0.4.2
+    wheel 0.37.1
     ```
 
--   Dentro del entorno virtual. Crearemos un proyecto Django que se llame ```Proyecto```
-    ```sh
-    django-admin startproject Proyecto
-    ```
-    ```sh
-    tree Proyecto
-    ```
-    ```sh
-    Proyecto
-    ├── manage.py
-    └── Proyecto
-        ├── asgi.py
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    ```
+## 6. Ejercicios
 
--   ```Es preferible ordenar las aplicaciones ya que muchas veces se necesita crear dos o más. Entonces las vamos a crear en directorios individuales para cada de aplicación.```
-    ```sh
-    cd Proyecto
-    ```
-    ```sh
-    pwd
-    ```
-    ```sh
-    /home/.../django_env/Proyecto
-    ```
-    ```sh
-    ../
-    ├── env
-    └── Proyecto
-        ├── manage.py
-        └── Proyecto
-            ├── asgi.py
-            ├── __init__.py
-            ├── settings.py
-            ├── urls.py
-            └── wsgi.py
-    ```
+- Cree la aplicación Library paso a paso desde la siguiente url:
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website
 
--   Ingresar al directorio ```.../django_env/Proyecto``` y alli crear un directorio llamado ```Apps``` para alojar alli a las aplicaciones.
-    ```sh
-    mkdir Apps
-    cd Apps
-    django-admin startapp Aplicacion1
-    ```
-    ```sh
-    tree ../
-    ```
-    ```sh
-    ../
-    ├── Apps
-    │   └── Aplicacion1
-    │       ├── admin.py
-    │       ├── apps.py
-    │       ├── __init__.py
-    │       ├── migrations
-    │       │   └── __init__.py
-    │       ├── models.py
-    │       ├── tests.py
-    │       └── views.py
-    ├── manage.py
-    └── Proyecto
-        ├── asgi.py
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    ```
+## 7. Tarea
 
--   Crearemos nuestro primer modelo editando el archivo ```models.py```
-    ```sh
-    vim models.py
-    ```
-    ```sh
-    from django.db import models
-    import uuid
-    # Create your models here.
+- Elabore un primer informe grupal de la aplicaci ́on que desarrollar ́a durante este semestre.
+- Utilicen todas las recomendaciones dadas en la aplicaci ́on library.
+- Acuerdos :
+    • Los grupos pueden estar conformado por 1 a 4 integrantes.
+    • S ́olo se presenta un informe grupal.
+    • S ́olo se revisa un repositorio. (El  ́unico que est ́e en el informe grupal).
+    • Todos los integrantes del grupo tienen una copia del laboratorio e informe en su repositorio privado.
+    • Todos los integrantes deben pertenecer al mismo grupo de laboratorio.
+    • El docente preguntar ́a en cualquier momento a un integrante sobre el proyecto, codigo fuente, avance.
 
-    class Video(models.Model):
-        id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-        titulo = models.CharField(max_length=100)
-        url = models.URLField(max_length=200)
-        fecha_carga = models.DateField(auto_now=True)
+## 8. Pregunta
 
-    ```
+- Por cada integrante del equipo, resalte un aprendizaje que adquiri ́o al momento de estudiar Django. No se reprima de ser detallista. Coloque su nombre entre parentesis para saber que es su aporte.
 
--   Registrar el modelo dentro de ```admin.py```
-    ```sh
-    vim admin.py
-    ```
-    ```sh
-    from django.contrib import admin
-    from .models import Video
+## 9. Entregables
 
-    # Register your models here.
+- El informe debe tener un enlace al directorio específico del laboratorio en su repositorio GitHub privado donde esté todo el código fuente y otros que sean necesarios. Evitar la presencia de archivos: binarios, objetos, archivos temporales, cache, librerias, entornos virtuales. Si hay configuraciones particulares puede incluir archivos de especificación como: requirements.txt, o leeme.txt.
+- No olvide que el profesor debe ser siempre colaborador a su repositorio (Usuario del profesor @rescobedoq).
+- Para ser considerado con la calificaci ́on de m ́axima nota, el informe debe estar elab ́orado en LATEX
+- Usted debe describir s ́olo los commits m ́as importantes que marcaron hitos en su trabajo, adjutando capturas de pantalla, del commit, del código fuente, de sus ejecuciones y pruebas.
+- En el informe siempre se debe explicar las im ́agenes (c ́odigo fuente, capturas de pantalla, commits, ejecuciones, pruebas, etc.) con descripciones puntuales pero precisas.
 
-    admin.site.register(Video)
-    ```
+## 10. Rúbricas
 
--   Añadir la aplicación como una aplicación instalada en el archivo ```Proyecto/settings.py```
-    ```sh
-    vim settings.py
-    ```
-    ```sh
-    #...
-    # Application definition
+### 10.1. Rúbrica para entregable Informe
 
-    INSTALLED_APPS = [
-        'django.contrib.admin',
-        'django.contrib.auth',
-        'django.contrib.contenttypes',
-        'django.contrib.sessions',
-        'django.contrib.messages',
-        'django.contrib.staticfiles',
-        'Apps.Aplicacion1'
-    ]
-    #...
-    ```
--   ```Si estas trabajando en entornos virtuales es muy probable que no reconozca la ruta de la aplicación. Así que debemos editar el archivo apps.py de la aplicación```
-    ```sh
-    vim apps.py
-    ```
-    ```sh
-    from django.apps import AppConfig
+***Tabla 1: Rúbrica para tipo de Informe***
+<a href="https://ibb.co/SyHdtdK"><img src="https://i.ibb.co/PjJ9c95/lab51.jpg" alt="lab51" border="0"></a>
 
+### 10.2. Rúbrica para el contenido del Informe y demostración
 
-    class Aplicacion1Config(AppConfig):
-        default_auto_field = 'django.db.models.BigAutoField'
-        name = 'Apps.Aplicacion1'
-    ```
+- El alumno deberá marcar o dejar en blanco en las celdas de la columna Checklist, deacuerdo a si cumplió o no con el ítem correspondiente.
+- Si un alumno supera la fecha de entrega, su calificación siempre será sobre la nota mínima aprobada, siempre y cuando cumpla con todos lo items.
+- El alumno debe autocalificarse en la columna Estudiante de acuerdo a la tabla de calificación de niveles de desempeño:
 
--   Ingresar al directorio ```.../django_env/Proyecto``` donde se encuentra el archivo ```manage.py``` para realizar la primera migración:
-    ```sh
-    python manage.py migrate
-    ```
-    ```sh
-    Operations to perform:
-    Apply all migrations: admin, auth, contenttypes, sessions
-    Running migrations:
-    Applying contenttypes.0001_initial... OK
-    Applying auth.0001_initial... OK
-    Applying admin.0001_initial... OK
-    Applying admin.0002_logentry_remove_auto_add... OK
-    Applying admin.0003_logentry_add_action_flag_choices... OK
-    Applying contenttypes.0002_remove_content_type_name... OK
-    Applying auth.0002_alter_permission_name_max_length... OK
-    Applying auth.0003_alter_user_email_max_length... OK
-    Applying auth.0004_alter_user_username_opts... OK
-    Applying auth.0005_alter_user_last_login_null... OK
-    Applying auth.0006_require_contenttypes_0002... OK
-    Applying auth.0007_alter_validators_add_error_messages... OK
-    Applying auth.0008_alter_user_username_max_length... OK
-    Applying auth.0009_alter_user_last_name_max_length... OK
-    Applying auth.0010_alter_group_name_max_length... OK
-    Applying auth.0011_update_proxy_permissions... OK
-    Applying auth.0012_alter_user_first_name_max_length... OK
-    Applying sessions.0001_initial... OK
-    ```
-    -   Podemos observar que la base de datos por defecto ```db.sqlite3``` se ha creado con las tablas iniciales
-    ```sh
-    tree -L 3 ../
-    ```
-    ```
-    ../
-    ├── env
-    └── Proyecto
-        ├── Apps
-        │   └── Aplicacion1
-        ├── db.sqlite3
-        ├── manage.py
-        └── Proyecto
-            ├── asgi.py
-            ├── __init__.py
-            ├── __pycache__
-            ├── settings.py
-            ├── urls.py
-            └── wsgi.py
-    ```
+***Tabla 2: Niveles de desempeño***
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/nPqkGT7/lab52.jpg" alt="lab52" border="0"></a>
 
--   Crear el super usuario para poder ingresar al panel de administración:
-    ```sh
-    python manage.py createsuperuser
-    ```
-    ```sh
-    Username (leave blank to use 'richart'): richarteq 
-    Email address: richarteq@gmail.com
-    Password: 
-    Password (again): 
-    This password is entirely numeric.
-    Bypass password validation and create user anyway? [y/N]: y
-    Superuser created successfully.
-    ```
+***Tabla 3: Rúbrica para contenido del Informe y demostración***
+<a href="https://ibb.co/X88Fkc3"><img src="https://i.ibb.co/vYYLv0Q/lab53.jpg" alt="lab53" border="0"></a>
 
--   Crear las migraciones. La migración inicial creará el modelo Video.
-    ```sh
-    python manage.py makemigrations
-    ```
-    ```sh
-    Migrations for 'Aplicacion1':
-    Apps/Aplicacion1/migrations/0001_initial.py
-        - Create model Video
-    ```
--   Realizar una nueva migración para que los cambios se efectuen.
-     ```sh
-    python manage.py migrate
-    ```
-    ```sh
-    Operations to perform:
-    Apply all migrations: Aplicacion1, admin, auth, contenttypes, sessions
-    Running migrations:
-    Applying Aplicacion1.0001_initial... OK
-    ```
--   Ejecutar el servidor
-    ```sh
-    python manage.py runserver
-    ```
-    ```sh
-    Watching for file changes with StatReloader
-    Performing system checks...
+## 11. Referencias
 
-    System check identified no issues (0 silenced).
-    June 02, 2022 - 14:50:11
-    Django version 4.0.5, using settings 'Proyecto.settings'
-    Starting development server at http://127.0.0.1:8000/
-    Quit the server with CONTROL-C.
-    ```
-
--   Acceder al Panel de  administración desde el navegador web a : http://127.0.0.1:8000/admin
-
-    -   Inicio de sesión
-
-        ![DJANGO-PANEL-ADMIN-LOGIN](imagenes/django_admin_01.png)
-
-    -   Portada inicial
-        ![DJANGO-PANEL-ADMIN-HOME](imagenes/django_admin_02.png)
-
-    -   Agregando un nuevo video
-        ![DJANGO-PANEL-ADMIN-ADD-01](imagenes/django_admin_03.png)
-
-    -   Video agregado satisfactoriamente
-        ![DJANGO-PANEL-ADMIN-ADD-02](imagenes/django_admin_04.png)
-
-    -   Ver video
-        ![DJANGO-PANEL-ADMIN-VIEW](imagenes/django_admin_05.png)
-
-
-#
-
-## EJERCICIOS PROPUESTOS
--   Crea un blog sencillo en un entorno virtual utilizando la guía: https://tutorial.djangogirls.org/es/django_start_project/
--   Especificar paso a paso la creación del blog en su informe.
--   Crear un video tutorial donde realice las operaciones CRUD (URL public reproducible online)
--   Adjuntar URL del video en el informe.
-
-#
-
-## CUESTIONARIO
--   ¿Cuál es un estándar de codificación para Python? Ejemplo: Para PHP en el proyecto Pear https://pear.php.net/manual/en/standards.php
--   ¿Qué diferencias existen entre EasyInstall, pip, y PyPM?
--   En un proyecto Django que se debe ignorar para usar git. Vea: https://github.com/django/django/blob/main/.gitignore. ¿Qué otros tipos de archivos se deberían agregar a este archivo?
--   Utilice ```python manage.py shell``` para agregar objetos. ¿Qué archivos se modificaron al agregar más objetos?
-
-#
-
-## REFERENCIAS
--   https://www.w3schools.com/python/python_reference.asp
--   https://docs.python.org/3/tutorial/
--   https://developer.mozilla.org/es/docs/Learn/Server-side/Django/Models
--   https://tutorial.djangogirls.org/es/django_models/
--   https://pear.php.net/manual/en/standards.php
--   https://docs.djangoproject.com/en/4.0/
--   https://www.youtube.com/watch?v=M4NIs4BM1dk
--   https://pypi.org/
--   https://pip.pypa.io/en/latest/user_guide/
--   https://packaging.python.org/en/latest/tutorials/installing-packages/
+- https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website
+- https://github.com/mdn/django-locallibrary-tutorial
+- https://github.com/rescobedoq/pw2/tree/main/labs/lab05
+- William S. Vincent. (2022). Django for Beginners: Build websites with Python. Django 4.0. leanpub.com. [URL]
 
 #
 
