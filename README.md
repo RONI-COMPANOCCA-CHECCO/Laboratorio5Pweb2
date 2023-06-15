@@ -171,6 +171,8 @@
     $ mkdir -p $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
     ```
 
+<a href="https://ibb.co/1vcL35T"><img src="https://i.ibb.co/vw9HbGk/aaa.jpg" alt="aaa" border="0"></a>
+
 ### 5.3. Crear entorno virtual en un directorio
 
 - En este directorio crear un entorno virtual ejecutando el siguiente comando:
@@ -190,6 +192,8 @@
                  Listing 11: Creando entorno virtual en MacOS
     $ python -m venv $HOME/rescobedoq/pw2-lab-23a/lab05/my_env
     ```
+
+<a href="https://ibb.co/1vcL35T"><img src="https://i.ibb.co/vw9HbGk/aaa.jpg" alt="aaa" border="0"></a>
 
 ### 5.4. Activando entorno virtual
 
@@ -212,6 +216,8 @@
                  Listing 14: Activando entorno virtual en GNU/Linux
     $ source $HOME/rescobedoq/pw2-lab-23a/lab05/my_env/bin/activate
     ```
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/k9NnKDZ/AAA1.jpg" alt="AAA1" border="0"></a>
 
 ### 5.5. Desactivando entorno virtual
 
@@ -257,6 +263,8 @@
     sqlparse 0.4.2
     wheel 0.37.1
     ```
+
+<a href="https://ibb.co/Gv0DzRv"><img src="https://i.ibb.co/XZbPctZ/aaa2.jpg" alt="aaa2" border="0"></a>
 
 ## 6. Ejercicios
 
