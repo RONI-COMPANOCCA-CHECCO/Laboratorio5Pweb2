@@ -60,7 +60,7 @@
 </<tr>
 <tr><td colspan="6">ALUMNO:
 <ul>
-<li>Roni Companocca Checco</li>
+<li>Roni Companocca Checco y 2 año y tercer año</li>
 </ul>
 </td>
 </<tr>
