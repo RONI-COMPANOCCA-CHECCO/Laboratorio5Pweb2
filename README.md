@@ -60,7 +60,13 @@
 </<tr>
 <tr><td colspan="6">ALUMNO:
 <ul>
-<li>Roni Companocca Checco y 2 año y tercer año</li>
+<li>Roni Companocca Checco</li>
+</ul>
+</td>
+</<tr>
+<tr><td colspan="6">LINK REPOSITORIO:
+<ul>
+<li>https://github.com/RONI-COMPANOCCA-CHECCO/Laboratorio5Pweb2</li>
 </ul>
 </td>
 </<tr>
@@ -270,6 +276,51 @@
 
 - Cree la aplicación Library paso a paso desde la siguiente url:
 - https://developer.mozilla.org/en-US/docs/Learn/Server-side/Django/Tutorial_local_library_website
+
+### 1.- el sitio web de la biblioteca local
+
+### 2.- Creando un sitio web esqueleto
+
+<a href="https://imgbb.com/"><img src="https://i.ibb.co/N2YD564/a21.jpg" alt="a21" border="0"></a>
+<a href="https://ibb.co/BGYKJw0"><img src="https://i.ibb.co/1M4JNbF/a22.jpg" alt="a22" border="0"></a>
+<a href="https://ibb.co/kgfJZWQ"><img src="https://i.ibb.co/6Rx8Qfg/a23.jpg" alt="a23" border="0"></a>
+
+### 3.- Usando modelos
+
+<a href="https://ibb.co/G7p2KqR"><img src="https://i.ibb.co/nrmcHFj/a33.jpg" alt="a33" border="0"></a>
+<a href="https://ibb.co/f9t7zxy"><img src="https://i.ibb.co/RNPWkDs/a34.jpg" alt="a34" border="0"></a>
+
+### 4.- Sitio de administración de Django
+
+<a href="https://ibb.co/cv7W03G"><img src="https://i.ibb.co/59fQm4N/a41.jpg" alt="a41" border="0"></a>
+<a href="https://ibb.co/B2z0CY9"><img src="https://i.ibb.co/gZjkRcx/a42.jpg" alt="a42" border="0"></a>
+<a href="https://ibb.co/ctk36wh"><img src="https://i.ibb.co/6brwH80/a43.jpg" alt="a43" border="0"></a>
+<a href="https://ibb.co/XsjmMWb"><img src="https://i.ibb.co/PhFB0rN/a44.jpg" alt="a44" border="0"></a>
+
+### 5.- Creando nuestra página de inicio
+
+<a href="https://ibb.co/4tqHNvY"><img src="https://i.ibb.co/c3BjTfC/a51.jpg" alt="a51" border="0"></a>
+
+### 6.- lista genérica y vistas detalladas
+
+<a href="https://ibb.co/rwy4KJk"><img src="https://i.ibb.co/nLkzqSr/a61.jpg" alt="a61" border="0"></a>
+<a href="https://ibb.co/dpPVZp9"><img src="https://i.ibb.co/WzkMCz9/a62.jpg" alt="a62" border="0"></a>
+
+### 7.- Marco de sesiones
+
+<a href="https://ibb.co/ygJh9WY"><img src="https://i.ibb.co/vL8sFZQ/a71.jpg" alt="a71" border="0"></a>
+
+### 8.- Autenticación de usuarios y permisos
+
+<a href="https://ibb.co/XkkPtNq"><img src="https://i.ibb.co/KzzgWRJ/a81.jpg" alt="a81" border="0"></a>
+<a href="https://ibb.co/b30dLDV"><img src="https://i.ibb.co/MhvNpQH/a82.jpg" alt="a82" border="0"></a>
+
+### 9.- Trabajar con formularios
+
+### 10.- Prueba de una aplicación web Django
+
+### 11.- Implementación de Django en producción
+
 
 ## 7. Tarea
 
